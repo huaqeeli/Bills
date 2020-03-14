@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+
+<AnchorPane id="AnchorPane" prefHeight="540.0" prefWidth="854.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8" fx:controller="controlleres.CheckPageController">
+   <children>
+      <BorderPane prefHeight="200.0" prefWidth="200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <left>
+            <TableView maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" nodeOrientation="RIGHT_TO_LEFT" prefHeight="540.0" prefWidth="482.0" BorderPane.alignment="CENTER">
+              <columns>
+                <TableColumn prefWidth="75.0" />
+              </columns>
+               <columnResizePolicy>
+                  <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+               </columnResizePolicy>
+            </TableView>
+         </left>
+         <right>
+            <VBox alignment="TOP_CENTER" prefHeight="540.0" prefWidth="370.0" style="-fx-background-color: #C2AA6C;" BorderPane.alignment="CENTER">
+               <children>
+                  <ImageView fitHeight="206.0" fitWidth="211.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../image/prLogo.png" />
+                     </image>
+                     <VBox.margin>
+                        <Insets bottom="30.0" top="10.0" />
+                     </VBox.margin>
+                  </ImageView>
+                  <GridPane maxWidth="1.7976931348623157E308" prefHeight="89.0" prefWidth="370.0" BorderPane.alignment="CENTER">
+                    <columnConstraints>
+                      <ColumnConstraints hgrow="SOMETIMES" maxWidth="233.0" minWidth="10.0" prefWidth="233.0" />
+                      <ColumnConstraints hgrow="SOMETIMES" maxWidth="172.0" minWidth="10.0" prefWidth="111.0" />
+                    </columnConstraints>
+                    <rowConstraints>
+                      <RowConstraints maxHeight="30.0" minHeight="10.0" prefHeight="30.0" valignment="CENTER" />
+                      <RowConstraints maxHeight="263.0" minHeight="10.0" prefHeight="30.0" />
+                      <RowConstraints maxHeight="482.0" minHeight="7.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                    </rowConstraints>
+                     <children>
+                        <Label alignment="CENTER" contentDisplay="CENTER" nodeOrientation="RIGHT_TO_LEFT" prefHeight="28.0" prefWidth="125.0" text="رقم الشيك :" GridPane.columnIndex="1" />
+                        <Label alignment="CENTER" contentDisplay="CENTER" layoutX="182.0" layoutY="10.0" nodeOrientation="RIGHT_TO_LEFT" prefHeight="28.0" prefWidth="125.0" text="تاريخ الشيك :" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                        <Label alignment="CENTER" contentDisplay="CENTER" layoutX="243.0" layoutY="38.0" nodeOrientation="RIGHT_TO_LEFT" prefHeight="28.0" prefWidth="125.0" text="مبلغ الشيك الاجمالي :" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                        <TextField alignment="CENTER" nodeOrientation="RIGHT_TO_LEFT" />
+                        <TextField alignment="CENTER" layoutX="10.0" layoutY="12.0" nodeOrientation="RIGHT_TO_LEFT" GridPane.rowIndex="2" />
+                        <ComboBox maxWidth="1.7976931348623157E308" nodeOrientation="RIGHT_TO_LEFT" prefWidth="150.0" GridPane.rowIndex="1" />
+                     </children>
+                     <VBox.margin>
+                        <Insets left="10.0" />
+                     </VBox.margin>
+                  </GridPane>
+                  <HBox prefHeight="30.0" prefWidth="370.0">
+                     <children>
+                        <Button mnemonicParsing="false" prefHeight="25.0" prefWidth="234.0" text="حفظ" />
+                     </children>
+                     <VBox.margin>
+                        <Insets left="10.0" top="10.0" />
+                     </VBox.margin>
+                  </HBox>
+               </children>
+               <BorderPane.margin>
+                  <Insets />
+               </BorderPane.margin>
+            </VBox>
+         </right>
+      </BorderPane>
+   </children>
+</AnchorPane>
